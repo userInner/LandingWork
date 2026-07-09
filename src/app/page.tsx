@@ -7,7 +7,7 @@ export default function HomePage() {
       <nav className="fixed top-0 w-full z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="text-xl font-bold tracking-tight">
-            <span className="text-emerald-400">Snap</span>Forge
+            <span className="text-emerald-400">Landing</span>Work
           </span>
           <div className="flex items-center gap-6">
             <Link href="#features" className="text-sm text-slate-400 hover:text-white transition">
@@ -71,7 +71,7 @@ export default function HomePage() {
               <span className="ml-3 text-xs text-slate-500">cURL</span>
             </div>
             <pre className="p-6 text-sm text-slate-300 overflow-x-auto">
-              <code>{`curl -X POST https://api.snapforge.dev/v1/screenshot \\
+              <code>{`curl -X POST https://api.landingwork.dev/v1/screenshot \\
   -H "Authorization: Bearer sk_your_api_key" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -301,10 +301,10 @@ export default function HomePage() {
       <footer className="py-12 px-6 border-t border-slate-800">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-sm text-slate-500">
-            &copy; 2025 SnapForge. Built for developers, by a developer.
+            &copy; 2025 LandingWork. Built for developers, by a developer.
           </span>
           <div className="flex items-center gap-6 text-sm text-slate-500">
-            <a href="mailto:hello@snapforge.dev" className="hover:text-white transition">
+            <a href="mailto:hello@landingwork.dev" className="hover:text-white transition">
               Contact
             </a>
             <a href="#" className="hover:text-white transition">

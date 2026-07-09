@@ -118,7 +118,7 @@ export default function SignupPage() {
         <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-8">
           <div className="text-center mb-8">
             <span className="text-2xl font-bold tracking-tight">
-              <span className="text-emerald-400">Snap</span>Forge
+              <span className="text-emerald-400">Landing</span>Work
             </span>
             <h1 className="text-2xl font-bold mt-4 mb-2">
               {step === "email" ? "Get your free API key" : "Check your email"}

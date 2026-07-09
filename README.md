@@ -1,11 +1,11 @@
-# SnapForge
+# LandingWork
 
 The simplest screenshot API for developers. Turn any URL or HTML into a pixel-perfect PNG, JPEG, or PDF with one API call.
 
 ## Project Structure
 
 ```
-snapforge/
+landingwork/
 ├── src/
 │   ├── app/
 │   │   ├── api/v1/screenshot/route.ts   # Screenshot API endpoint
@@ -80,17 +80,17 @@ curl -X POST http://localhost:3000/api/v1/screenshot \
 
 ```bash
 # Build the image
-docker build -t snapforge .
+docker build -t landingwork .
 
 # Run the container
 docker run -d \
-  --name snapforge \
+  --name landingwork \
   -p 3000:3000 \
   -e API_KEYS="sk_live_your_key_1,sk_live_your_key_2" \
   -e RATE_LIMIT_MAX=50 \
   -e MAX_CONCURRENT_BROWSERS=4 \
   --restart unless-stopped \
-  snapforge
+  landingwork
 ```
 
 ### Deploy with Docker Compose
@@ -99,7 +99,7 @@ Create a `docker-compose.yml`:
 
 ```yaml
 services:
-  snapforge:
+  landingwork:
     build: .
     ports:
       - "3000:3000"

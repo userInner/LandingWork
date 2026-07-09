@@ -1,7 +1,7 @@
 {
-  "name": "snapforge",
+  "name": "landingwork",
   "version": "1.0.0",
-  "description": "SnapForge - The simplest screenshot API for developers",
+  "description": "LandingWork - The simplest screenshot API for developers",
   "private": true,
   "scripts": {
     "dev": "next dev",

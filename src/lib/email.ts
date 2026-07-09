@@ -9,7 +9,7 @@ function getResend(): Resend {
   return resend;
 }
 
-const FROM_EMAIL = process.env.FROM_EMAIL || "SnapForge <onboarding@resend.dev>";
+const FROM_EMAIL = process.env.FROM_EMAIL || "LandingWork <onboarding@resend.dev>";
 
 /**
  * Send a verification code email to the user.
@@ -22,10 +22,10 @@ export async function sendVerificationEmail(
     const { error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to,
-      subject: `${code} is your SnapForge verification code`,
+      subject: `${code} is your LandingWork verification code`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 20px;">
-          <h2 style="color: #10b981; margin-bottom: 8px;">SnapForge</h2>
+          <h2 style="color: #10b981; margin-bottom: 8px;">LandingWork</h2>
           <p style="color: #334155; font-size: 16px; margin-bottom: 24px;">
             Here's your verification code:
           </p>
@@ -37,7 +37,7 @@ export async function sendVerificationEmail(
           </p>
           <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 24px 0;" />
           <p style="color: #94a3b8; font-size: 12px;">
-            SnapForge — The simplest screenshot API for developers.
+            LandingWork — The simplest screenshot API for developers.
           </p>
         </div>
       `,

@@ -31,5 +31,5 @@ app.listen({ port, host: "0.0.0.0" }, (err, address) => {
     app.log.error(err);
     process.exit(1);
   }
-  console.log(`🚀 SnapForge API running at ${address}`);
+  console.log(`🚀 LandingWork API running at ${address}`);
 });
